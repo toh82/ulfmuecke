@@ -1,0 +1,12 @@
+.footer {
+  padding: 2rem 0;
+  background: var(--color__primary);
+  color: var(--color__base);
+
+  .link {
+    color: var(--color__base);
+    border: none;
+    font-style: normal;
+    padding: 0;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "site": {
+    "url": {
+      "base": "",
+      "static": ""
+    },
+    "header": {
+      "title_prefix": "Ulf Mücke",
+      "keywords": ""
+    }
+  },
+  "blog": {
+    "post": {
+      "baseFolder": "./src/",
+      "folder": "posts/"
+    }
+  },
+  "author": "Ulf Mücke",
+  "twitter": "@ToH_82"
+}

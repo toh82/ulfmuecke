@@ -1,0 +1,7 @@
+<meta property="og:title" content="{{title}}" />
+<meta property="og:url" content="{{getUrl relativePath}}" />
+<meta property="og:type" content="website" />
+
+{{#if previewImage}}
+<meta property="og:image" content="{{getUrl 'assets/media/'}}{{previewImage}}" />
+{{/if}}

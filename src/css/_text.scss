@@ -1,0 +1,45 @@
+.text {
+  &--small {
+    font-size: 1em;
+  }
+  &--serif {
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
+  }
+  &--right {
+    text-align: right;
+  }
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.headline {
+  display: inline-block;
+
+  &__sub {
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+
+  &--akzent {
+    padding-bottom: 2rem; 
+    border-bottom: 2px solid var(--color__brand);
+
+    .headline__main {
+      font-family: 'Playfair Display SC', serif;
+      text-transform: uppercase;
+      font-size: calc(1rem + 1vw);
+
+      @media (min-width: $break-medium) {
+          font-size: 2rem;
+      }      
+    }
+
+    .headline__sub {
+      color: var(--color__brand);      
+      font-weight: var(--font__weight--bold);
+    }
+  }
+}

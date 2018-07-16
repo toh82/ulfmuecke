@@ -1,0 +1,18 @@
+:root {
+    --color__base: #f4f3f1;
+    
+    --color__primary: #2E2E2E;
+    --color__primary--light: rgb(66, 66, 66);
+
+    --color__brand: #EE3839;
+    --color__brand--dark: #058166;
+
+    --font__weight--bold: 700;
+    --font__weight--regular: 500;
+    --font__weight--light: 300;
+}
+
+$break-small: 480px;
+$break-medium: 768px;
+$break-big: 1024px;
+$break-huge: 1100px;

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head itemscope itemtype="http://schema.org/WebSite">
+    {{> htmlheader}}
+    <title itemprop='name'>{{site.header.title_prefix}} - </title>
+    {{> opengraph title="" previewImage="tobias_hartmann.jpg"}}
+  </head>
+  <body class="toh">
+    <div class="container">
+        <div class="topbar">            
+            <div class="topbar__navigation">{{> navigation}}</div>
+        </div>
+        
+        <header class="info-box">
+            <div class="info-box__logo">{{> logo_svg}}</div>
+            <div class="info-box__content">
+                <p class="info-box__headline"><span class="visually-hidden">Ulf Mücke - </span>Rechtsanwalts- und Steuerberatungskanzlei</p>
+                <h1 class="info-box__subline">Hier kommt ne menge großer Text hin, Hier kommt ne menge großer Text hin, Hier kommt ne menge großer Text hin, Hier kommt ne menge großer Text hin Hier kommt ne menge großer Text hin, Hier kommt ne menge großer Text hin</h1>                
+            </div>            
+        </header>        
+    </div>
+
+    <div class="container">
+        <div class="cnt  cnt--one">
+            <div class="text--right">foobar</div>
+            <div>
+                <div class="headline  headline--akzent">
+                    <div class="headline__sub">this is the subline</div>     
+                    <h2 class="headline__main">This is a headline<br>with akzent</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    {{> footer}}    
+  </body>
+</html>

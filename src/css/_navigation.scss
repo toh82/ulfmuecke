@@ -1,0 +1,19 @@
+
+  .navigation {
+    .list__item {
+      padding: 0;
+    }
+
+    .link {
+      border: 2px solid transparent;
+      border-radius: 20%/50%;
+      padding: 0.25rem 1rem;
+      font-style: normal;
+      color: var(--color__primary); 
+
+      &:hover {
+        background: transparent;
+        border-color: var(--color__brand);
+      }    
+    } 
+  }  
