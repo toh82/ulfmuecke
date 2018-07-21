@@ -6,6 +6,22 @@
   @media (min-width: $break-big) {
     padding: 0 5rem;
   }
+
+  &--dark {
+    background: var(--color__primary);
+  }
+
+  &--background-handshake {
+    margin-top: 0;
+    padding: 5rem;
+    background-image: url('../media/rawpixel-558596-unsplash.jpg');
+    background-position: center; 
+    background-size: cover 
+  }
+
+  &.container--background-handshake + * {
+    margin-top: 0;
+  }
 }
 
 .topbar {
@@ -26,6 +42,15 @@
 
     @media (min-width: $break-huge) {
       grid-template-columns: 28rem auto;
+    }
+  }
+
+  &--boxes {
+    box-shadow: 0 0 0.6rem rgba(0,0,0, 0.2);   
+    margin: 0;
+
+    @media (min-width: $break-big) {
+      margin: 0 10%;
     }
   }
 }

@@ -9,6 +9,9 @@
   &--right {
     text-align: right;
   }
+  &--center {
+    text-align: center;
+  }
 }
 
 .visually-hidden {
@@ -17,15 +20,19 @@
 
 .headline {
   display: inline-block;
+  margin: 1rem 0 2rem 0;
 
   &__sub {
-    padding-bottom: 1rem;
     font-size: 0.9rem;
   }
 
   &--akzent {
     padding-bottom: 2rem; 
     border-bottom: 2px solid var(--color__brand);
+
+    .headline__sub {
+      padding-bottom: 1rem;
+    }
 
     .headline__main {
       font-family: 'Playfair Display SC', serif;
