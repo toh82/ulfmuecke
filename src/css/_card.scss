@@ -1,4 +1,12 @@
 .card {
   background: #ffffff;
-  padding: 1rem;
+  padding: 2rem 1rem;
+
+  &__image {
+    padding: 1rem;
+  }
+
+  &__headline {
+    padding-bottom: 1rem;
+  }
 }

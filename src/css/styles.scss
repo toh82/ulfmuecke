@@ -4,7 +4,6 @@
 
 @import "navigation";
 @import "footer";
-
 @import "base";
 @import "list";
 @import "card";
@@ -14,7 +13,33 @@
 @import "layout";
 @import "link";
 @import "text";
+@import "modal";
 
+* {
+  box-sizing: border-box;
+}
+
+.portrait {
+  border: 6px solid #ffffff;
+  box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+}
+
+.badge {
+  padding: 2rem 0;
+  background: var(--color__primary);
+  color: var(--color__base);
+  align-self: flex-start;
+  display: none;
+
+  @media (min-width: $break-big) {
+    display: block;
+  }
+
+  .fas {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
 
 .text-teaser {
   padding: 4rem 0;
@@ -22,16 +47,27 @@
   font-size: 1.5rem;
   font-weight: var(--font__weight--bold);
 
-  .number {
-    padding-top: 1rem; 
+  @media (min-width: $break-medium) {
+    font-size: 2rem;
+  }
+
+  .number { 
     display: block;
-    font-size: 1.5rem;
-    font-family: 'Noto Sans', sans-serif;
+    margin-top: 2rem;
+    font-family: 'Noto Sans', sans-serif;    
+
+    @media (min-width: $break-medium) {
+      font-size: 2rem;
+    }    
   }
 
   a {
     color: #ffffff;
     text-decoration: none;
     border: none;
+
+    &:hover {
+      background: transparent;
+    }
   }
 }

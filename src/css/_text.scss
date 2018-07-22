@@ -3,14 +3,19 @@
     font-size: 1em;
   }
   &--serif {
-    font-family: 'Playfair Display SC', serif;
-    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
   }
   &--right {
     text-align: right;
   }
   &--center {
     text-align: center;
+  }
+  &--bold {
+    font-weight: var(--font__weight--bold);
+  }
+  &--color-akzent {
+    color: var(--color__brand);
   }
 }
 
@@ -26,7 +31,31 @@
     font-size: 0.9rem;
   }
 
+  &--popout {
+    padding: 0 0 1.5rem;
+    text-shadow: 0 0 1.5rem rgba(0,0,0,1); 
+    color: #ffffff;
+
+    .headline__main {
+      font-size: 1.5rem;    
+      padding: 0 0 1.5rem 0;
+      font-family: 'Playfair Display', serif;
+
+      @media (min-width: $break-medium) {
+        font-size: 2.2rem;    
+      }
+    }
+
+    &:after {
+      content: '';
+      border-bottom: 2px solid var(--color__brand);  
+      display: inline-block;
+      width: 50%;    
+    }
+  }
+
   &--akzent {
+    margin: 0 0 2rem 0;
     padding-bottom: 2rem; 
     border-bottom: 2px solid var(--color__brand);
 
@@ -35,12 +64,11 @@
     }
 
     .headline__main {
-      font-family: 'Playfair Display SC', serif;
-      text-transform: uppercase;
-      font-size: calc(1rem + 1vw);
+      font-family: 'Playfair Display', serif;
+      font-size: calc(1.2rem + 1vw);
 
       @media (min-width: $break-medium) {
-          font-size: 2rem;
+          font-size: 2.2rem;
       }      
     }
 

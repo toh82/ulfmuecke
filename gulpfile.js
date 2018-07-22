@@ -47,6 +47,15 @@ gulp.task('js', function () {
     .pipe(gulp.dest('web/assets/js'))
 })
 
+gulp.task('copy', function () {
+  var gulpCopy = require('gulp-copy')
+  var sourceFiles = ['node_modules/micromodal/dist/micromodal.min.js']
+  var destination = 'web/assets/lib'
+
+  return gulp.src(sourceFiles)
+    .pipe(gulpCopy(destination, {prefix: 3}))
+})
+
 gulp.task('css', function () {
   var postcss = require('gulp-postcss')
   var cssnano = require('cssnano')
@@ -66,7 +75,7 @@ gulp.task('css', function () {
 })
 
 gulp.task('default', ['hbs', 'css', 'js'])
-gulp.task('build', ['hbs', 'css', 'js', 'images'])
+gulp.task('build', ['hbs', 'css', 'js', 'images', 'copy'])
 gulp.task('watch', function () {
   return gulp.watch('./src/**/*', ['hbs', 'css', 'js'])
 })

@@ -5,68 +5,89 @@
     <title itemprop='name'>{{site.header.title_prefix}} - </title>
     {{> opengraph title="" previewImage="tobias_hartmann.jpg"}}
   </head>
-  <body class="toh">
+  <body>
+
     <div class="container">
         <div class="topbar">            
-            <div class="topbar__navigation">{{> navigation}}</div>
-        </div>
-        
-        <header class="info-box">
-            <div class="info-box__logo">{{> logo_svg}}</div>
-            <div class="info-box__content">
-                <p class="info-box__headline"><span class="visually-hidden">Ulf Mücke - </span>Rechtsanwalts- und Steuerberatungskanzlei</p>
-                <h1 class="info-box__subline">Hier kommt ne menge großer Text hin, Hier kommt ne menge großer Text hin, Hier kommt ne menge großer Text hin, Hier kommt ne menge großer Text hin Hier kommt ne menge großer Text hin, Hier kommt ne menge großer Text hin</h1>                
-            </div>            
-        </header>        
+            <div class="topbar__logo"><a href="/index.html">{{> logo_svg}}</a></div>
+            <!--div class="topbar__navigation">{{> navigation}}</div-->
+        </div>   
     </div>
+
 
     <div class="container">
         <div class="cnt  cnt--one">
+            <div class="badge  text--center">
+                <br><br>
+                <i class="fas fa-certificate"></i><br>
+                <strong>Seit 1998</strong>
+            </div>
             <div class="text--right">
-                <img src="assets/media/rawpixel-659505-unsplash.jpg" alt="">
+                <img class="portrait" src="assets/media/ulf_muecke.jpg" alt="">
             </div>
             <div>
                 <div class="headline  headline--akzent">
-                    <div class="headline__sub">this is the subline</div>     
-                    <h2 class="headline__main">This is a headline<br>with akzent</h2>
+                    <div class="headline__sub">Klarheit in der Kostenberechnung</div>     
+                    <h2 class="headline__main">Meine Beratung soll Sie weiterbringen</h2>
                 </div>
-                <p>Hier kommt ne menge großer Text hin, Hier kommt ne menge großer Text hin, Hier kommt ne menge großer Text hin, Hier kommt ne menge großer Text hin Hier kommt ne menge großer Text hin, Hier kommt ne menge großer Text hin</p>
+                <p>Meine rechtliche und/oder steuerliche Beratung ist individuell auf Ihren Fall ausgerichtet, damit Sie dadurch Ihre Ziele sicher und schnell erreichen. Ich setze mich konsequent für Ihre Belange ein und bin nur Ihr persönlicher Interessenvertreter.</p>
+                <p>Sie möchten nicht von meiner Rechnung überrascht werden? Das kann ich verstehen. Daher sage ich Ihnen vor meiner Beauftragung, mit welchen Kosten Sie zu rechnen haben.</p>                
             </div>
         </div>
     </div>
 
-    <div class="container container--dark  text--center">
-        <div class="text-teaser  text-teaser--cta-call">
-            <p class="text--serif">Kostenlose Erstberatung <a class="number" href="tel:+49123456789">+49 123 4567 89</a></p>
+    <div class="background  background--dark">
+        <div class="container container--dark  text--center">
+            <div class="text-teaser  text-teaser--cta-call">
+                <p class="text--serif">Kostenlose Erstberatung. Direkt anrufen: <a class="number" href="tel:+4960319631677"><i class="fas fa-phone"></i> +49 (0) 60 31/9 63 16 77</a></p>
+            </div>
         </div>
     </div>
 
-    <div class="container  text--center  container--background-handshake">
-        <div class="headline">                 
-            <h2 class="headline__main">This is a headline</h2>
-            <div class="headline__sub">this is the subline</div>
-        </div>
-        <div class="cnt  cnt--boxes  grid  grid--2-md4">
-            <div class="card text--center">
-                <div class="card__image"></div>
-                <div class="card__headline">Thema 1</div>
-                <div class="card__body"></div>
+    <div class="background  background--handshake">
+        <div class="container  text--center">
+            <div class="headline  headline--popout">                 
+                <div class="headline__sub">Leistungen</div>
+                <h2 class="headline__main">Spezialisiert auf die Bereiche: <span class="visually-hidden">Erbrecht, Schenkungen, Vorsorgen, Steuerrecht und Steuergestaltung, Mietrecht und Immobilienrecht, Arbeitsrecht, Familienrecht</span></h2>                
             </div>
-            <div class="card text--center">
-                <div class="card__image"></div>
-                <div class="card__headline">Thema 2</div>
-                <div class="card__body"></div>
-            </div>            
-            <div class="card text--center">
-                <div class="card__image"></div>
-                <div class="card__headline">Thema 3</div>
-                <div class="card__body"></div>
+            <div class="cnt  cnt--boxes  cnt--area-cards  grid  grid--2-md3">
+                <div class="card  text--center">
+                    <div class="card__image"><i class="fas fa-certificate"></i></div>
+                    <div class="card__headline text--bold">Erbrecht</div>
+                </div>
+                <div class="card text--center">
+                    <div class="card__image"><i class="fas fa-certificate"></i></div>
+                    <div class="card__headline text--bold">Schenkungen</div>
+                </div>
+                <div class="card text--center">
+                    <div class="card__image"><i class="fas fa-certificate"></i></div>
+                    <div class="card__headline text--bold">Vorsorgen</div>
+                </div>                                
+                <div class="card text--center">
+                    <div class="card__image"><i class="fas fa-certificate"></i></div>
+                    <div class="card__headline text--bold">Steuerrecht</div>
+                </div>
+                <div class="card text--center">
+                    <div class="card__image"><i class="fas fa-certificate"></i></div>
+                    <div class="card__headline text--bold">Steuer&shy;gestaltung</div>
+                </div>                                     
+                <div class="card text--center">
+                    <div class="card__image"><i class="fas fa-certificate"></i></div>
+                    <div class="card__headline text--bold">Mietrecht</div>
+                </div>      
+                <div class="card text--center">
+                    <div class="card__image"><i class="fas fa-certificate"></i></div>
+                    <div class="card__headline text--bold">Immobilien&shy;recht</div>
+                </div>                               
+                <div class="card text--center">
+                    <div class="card__image"><i class="fas fa-certificate"></i></div>
+                    <div class="card__headline text--bold">Arbeitsrecht</div>
+                </div> 
+                <div class="card text--center">
+                    <div class="card__image"><i class="fas fa-certificate"></i></div>
+                    <div class="card__headline text--bold">Familienrecht</div>
+                </div>           
             </div>
-            <div class="card text--center">
-                <div class="card__image"></div>
-                <div class="card__headline">Thema 3</div>
-                <div class="card__body"></div>
-            </div>                                        
         </div>
     </div>
         
