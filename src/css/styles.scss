@@ -32,7 +32,7 @@
   display: none;
 
   @media (min-width: $break-big) {
-    display: block;
+    display: inline-block;
   }
 
   .fas {
