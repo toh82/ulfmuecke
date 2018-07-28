@@ -1,7 +1,10 @@
 .text {
   &--small {
-    font-size: 1em;
+    font-size: 0.8em;
   }
+  &--xsmall {
+    font-size: 0.6em;
+  }  
   &--serif {
     font-family: 'Playfair Display', serif;
   }

@@ -1,3 +1,7 @@
+.header.container {
+  margin-top: 4rem;
+}
+
 .header {
   &__headline {    
     width: 90%;
@@ -11,7 +15,7 @@
   }
 
   &__cta {
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 
   &__cta a {
