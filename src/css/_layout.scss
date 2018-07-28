@@ -10,10 +10,14 @@
   @media (min-width: $break-big) {
     padding: 0 5rem;
   }
+
+  &--first {
+    margin-top: 5rem;
+  }
 }
 
 .container + * {
-  margin-top: 2rem;
+  margin-top: 6rem;
 }
 
 .background {
@@ -25,21 +29,37 @@
     background-position: center; 
     background-size: cover;
   }
+
   &--city {
     margin-top: 0;
     padding: 5rem 0;
     background-image: url('../media/header.jpg');
     background-position: center; 
     background-size: cover;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
+
+  &--office {
+    margin-top: 10rem;
+    padding: 0 0 6rem 0;
+    background-image: url('../media/office.jpg');
+    background-position: center; 
+    background-size: cover;
+    margin-bottom: 0;
+  }
+
   &--dark {
     background: var(--color__primary);
   }    
+
+  &--small {
+    padding: 2rem 0;
+    margin-bottom: 4rem;
+  }
 }
 
 .background--handshake {
-  @media (min-width: $break-medium) {
+  @media (min-width: $break-big) {
     padding: 5rem;
   }
 }
@@ -76,12 +96,26 @@
     }
   }
 
+  &--pictext {
+    padding: 2rem;
+    background: var(--color__base);
+    margin-top: -5rem;
+  }
+
   &--area-cards {
     .card__image {
+      font-size: 1.5rem;
       color: var(--color__brand);
     }
     .card__headline {
       font-size: 1rem;
+    }
+
+    .card {
+      cursor: pointer;
+      &:hover {
+        background: var(--color__base--dark);
+      }
     }
   }
 
@@ -106,6 +140,11 @@
   > * + * {
     margin-top: 0;
   }
+
+  &--cg {
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem; 
+  }
 }
 
 .grid--1-md2 {
@@ -125,6 +164,13 @@
 .grid--1-md3 {
   grid-template-columns: 1fr;
   @media (min-width: $break-medium) { 
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.grid--1-big3 {
+  grid-template-columns: 1fr;
+  @media (min-width: $break-big) { 
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -154,7 +200,17 @@
 .grid__item {
   &--md2 {
     @media (min-width: $break-medium) { 
-      grid-column: auto / span 2
+      grid-column: auto / span 2;
     }
   }
+  &--md2-pos2 {
+    @media (min-width: $break-medium) { 
+      grid-column: 2 / span 2;
+    }
+  }
+  &--md2-pos3 {
+    @media (min-width: $break-medium) { 
+      grid-column: 3 / span 2;
+    }
+  }    
 }

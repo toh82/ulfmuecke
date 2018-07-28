@@ -2,8 +2,30 @@
   background: #ffffff;
   padding: 2rem 1rem;
 
+  &--no-bg {
+    padding: 0;
+    background: transparent;
+  }
+
   &__image {
     padding: 1rem;
+
+    &--circle {
+      padding: 0;
+      margin-bottom: 1rem;
+      background: var(--color__brand);
+      color: var(--color__base);
+      border-radius: 100%;
+      display: inline-flex;
+      width: 5rem;
+      height: 5rem;       
+
+      i {
+        font-size: 2rem;
+        align-self: center;
+        margin: 0 auto;
+      }
+    }
   }
 
   &__headline {

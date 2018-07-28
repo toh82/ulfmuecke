@@ -10,7 +10,7 @@ body {
 
 @media (min-width: $break-medium) {
   body {
-      font-size: 1rem;
+      font-size: 0.85rem;
   }
 }
 
@@ -50,6 +50,10 @@ h2 {
 
   @media (min-width: $break-medium) {
       font-size: 1.5rem;
+  }
+
+  + p {
+    margin-top: 1rem;
   }
 }
 
