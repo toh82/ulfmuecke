@@ -1,0 +1,33 @@
+
+.topbar {
+  @media (min-width: $break-medium) {
+    display: grid;
+    grid-template-columns: 18rem auto;
+  }
+
+  &__navigation {
+    align-self: flex-start;
+    padding-top: 0.8rem;
+
+    @media (min-width: $break-medium) {
+      text-align: right;  
+    }
+  }
+  
+  &__logo {
+    align-self: flex-start;
+    width: 14rem;
+
+    @media (min-width: $break-medium) {
+      width: auto;
+    }
+
+    a {
+      border: none;
+
+      &:hover {
+        background: transparent
+      }
+    }
+  }
+}
