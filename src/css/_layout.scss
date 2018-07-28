@@ -28,8 +28,7 @@
   &--city {
     margin-top: 0;
     padding: 5rem 0;
-    /** Photo by Greg Becker on Unsplash **/
-    background-image: url('../media/greg-becker-19268-unsplash.jpg');
+    background-image: url('../media/header.jpg');
     background-position: center; 
     background-size: cover;
     margin-bottom: 4rem;
@@ -131,27 +130,6 @@
 .grid.cnt--boxes {
   grid-column-gap: 1px;
   grid-row-gap: 1px; 
-}
-
-.header {
-  &__headline {
-    width: 80%;
-    font-family: 'Playfair Display', serif;
-    color: #ffffff;
-    font-weight: normal;
-  }
-  &__cta {
-    margin-top: 3rem;
-  }
-  &__cta a {
-    padding: 1.5rem 2rem;
-    font-size: 1.3rem;
-    font-weight: 700;
-    background: var(--color__primary);
-    color: var(--color__base);
-    border: none;
-    display: inline-block;
-  }
 }
 
 .grid {

@@ -9,6 +9,10 @@
     border: none;
     font-style: normal;
     padding: 0;
+
+    &:hover {
+      background: transparent;
+    }
   }
 
   .location-link {
@@ -17,13 +21,18 @@
   }
 
   .location-link,
-  .social-link {
-    color: var(--color__primary);
+  .social-link {    
     background: var(--color__base);
     margin-right: 0.5rem;
 
-    &:hover {
+    .fas,.fab {
       color: var(--color__primary);
+    }
+
+    &:hover {
+      .fas,.fab {
+        color: var(--color__primary);
+      }
     }
   }
 
@@ -46,11 +55,6 @@
 .contact {
   padding-top: 6px;
   padding-bottom: 1.5rem;
-
-  .phone {    
-    font-size: 1.6rem;    
-    margin-bottom: 2rem;
-  }
 
   .phone,
   .mail {

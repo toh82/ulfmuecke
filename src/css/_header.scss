@@ -1,0 +1,43 @@
+.header {
+  &__headline {    
+    width: 90%;
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    font-weight: normal;
+
+    @media (min-width: $break-big) { 
+      padding-left: 6.6rem;
+    }
+  }
+
+  &__cta {
+    margin-top: 3rem;
+  }
+
+  &__cta a {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background: var(--color__primary);
+    color: var(--color__base);
+    border: none;
+    display: block;
+    text-align: left;
+
+    &:hover {
+      color: var(--color__primary);
+      background: var(--color__base);      
+    }
+
+    @media (min-width: $break-medium) { 
+      padding: 1.5rem 2rem;
+      font-size: 1.4rem;
+      display: inline-block;
+    }
+  }
+
+  .list {
+    margin-top: 0.25rem;
+    display: block;
+  }
+}
