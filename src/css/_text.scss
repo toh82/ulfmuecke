@@ -24,6 +24,12 @@
 
 .visually-hidden {
   display: none;
+
+  &--md {
+    @media (min-width: $break-medium) {
+      display: none;
+    }
+  }
 }
 
 .headline {
