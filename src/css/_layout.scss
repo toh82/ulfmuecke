@@ -109,8 +109,13 @@
 
     @media (min-width: $break-big) {
       grid-column-gap: 2rem;
-      grid-template-columns: 17rem 15rem auto;
+      grid-template-columns: 16rem 16rem auto;
     }   
+
+    > p + p,
+    > * + * {
+      margin-top: 0;
+    }
   }
 
   &--boxes {
@@ -164,6 +169,7 @@
   display: grid;
   grid-column-gap: 0;
 
+  > p + p,
   > * + * {
     margin-top: 0;
   }

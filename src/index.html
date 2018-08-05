@@ -17,15 +17,14 @@
 
         <header class="header container">
             <div class="header__headline">
-                <h1>Rechtsanwalt & Steuerberater, Fachanwalt für Steuerrecht<br><span class="text--xsmall">in Friedberg und Umgebung</span></h1>            
-                
+                <h1>Rechtsanwalt &amp; Steuerberater, Fachanwalt für Steuerrecht<br><span class="text--xsmall">in Friedberg und Umgebung</span></h1>
             </div>
             <div class="header__cta  text--right">
-                <a href="tel:+4960319631677"><i class="fas fa-phone"></i>&nbsp;&nbsp;+49 (0) 60 31/9 63 16 77</a>
+                <a href="tel:{{phone.plain}}"><i class="fas fa-phone"></i>&nbsp;&nbsp;{{phone.formatted}}</a>
                 <ul class="list  list--unstyled  list--inline">
-                    <li class="list__item"><a href="#" class="social-link"><i class="fab fa-xing"></i><span class="visually-hidden">Xing Profil</span></a></li>
-                    <li class="list__item"><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i><span class="visually-hidden">LinkedIn Profil</span></a></li>
-                    <li class="list__item"><a class="location-link" href="https://goo.gl/maps/LURaSyZNN1m" rel="noopener" target="_blank"><i class="fas fa-map-marked-alt"></i><span class="visually-hidden">In Google Maps öffnen</span></a></li>
+                    <li class="list__item"><a href="{{xing}}" class="social-link"><i class="fab fa-xing"></i><span class="visually-hidden">Xing Profil</span></a></li>
+                    <li class="list__item"><a href="{{linkedin}}" class="social-link"><i class="fab fa-linkedin-in"></i><span class="visually-hidden">LinkedIn Profil</span></a></li>
+                    <li class="list__item"><a class="location-link" href="{{location}}" rel="noopener" target="_blank"><i class="fas fa-map-marked-alt"></i><span class="visually-hidden">In Google Maps öffnen</span></a></li>
                 </ul>                   
             </div>                 
         </header>
@@ -44,24 +43,25 @@
             <div>
                 <div class="headline  headline--akzent">
                     <div class="headline__sub">Rechtsanwalt und Steuerberater</div>     
-                    <h2 class="headline__main">Versierte Rechts&shy;beratung individuell, fair und transparent</h2>
+                    <h2 class="headline__main">Versierte Rechts&shy;beratung Durch Studium, Erfahrung und kontinuierliche Weiterbildung weiß ich Sie zu vertreten.</h2>
                 </div>
                 <p>Studium der Rechtswissenschaften an den Universitäten Berlin und Marburg. Referendariat u.a. in der Rechtsabteilung der Deutschen Börse AG in Frankfurt am Main und in der Rechtsanwaltskanzlei Walter, Conston, Alexander & Green (heute Alston & Bird) in New York.</p>
-                <p class="quote">Die Erfahrung nimmt ein furchtbar hohes Schulgeld, aber sie lehrt wie sonst keiner.<span class="cite">- Thomas Carlyle</span></p>                             
+
+                {{> quote-inline text="Die Erfahrung nimmt ein furchtbar hohes Schulgeld, aber sie lehrt wie sonst keiner." autor="Thomas Carlyle"}}                       
             </div>
         </div>
 
         <div class="cnt  cnt--two">
-            <div>
-                <p>Seit 1998 ist er als Rechtsanwalt tätig und seit 2007 auch als Fachanwalt für Steuerrecht. Seine Bestellung zum Steuerberater erfolgte 2002. Zudem ist er Absolvent des Fachlehrgangs „Zertifizierter Testamentsvollstrecker“ der Arbeitsgemeinschaft Testamentsvollstreckung und Vermögenssorge e.V. (AGT). Nach dem Ablegen der notariellen Fachprüfung ist die Bestellung zum Notar beantragt. Rechtsanwalt und Steuerberater Ulf Mücke ist Mitautor des InvG/InvStG-Kommentars Berger/Steck/Lübbehüsen und hält Vorträge zu steuerlichen und erbrechtlichen Themen.</p>
-            </div>
-            <div>
-                <p>Von 1998 bis 2005 beriet er die Mandanten von PricewaterhouseCoopers u.a. bei der steuerlichen Strukturierung von Akquisitionen. In der Zeit von 2006 bis 2017 beriet er die UBS Deutschland AG (jetzt UBS Europe SE) bzgl. der Besteuerung von Kapitalmarktprodukten und fertigte für deren Mitarbeiter Aus- und Weiterbildungsunterlagen im Bereich Steuern und Nachfolge. Die Kunden der UBS Europe SE unterstütze er in den Bereichen Steueroptimierung bei Kapitalanlagen und bei der Übertragung von Vermögenswerten.</p>
-            </div>
-            <div>
-                <p>Daneben widmete er sich als Vorstand der UBS Optimus Foundation Deutschland altruistischen Themen. Hier war er u.a. maßgeblich daran beteiligt, dass in Frankfurt a. Main, Düsseldorf, Berlin, Hamburg und München-Haar je ein neues Musikzentrum auf der Basis einer dreijährigen, großzügigen Förderung durch die UBS Optimus Foundation Deutschland mit Schuljahresbeginn 2017/2018 etabliert werden konnte.</p>
-            </div>
+            <p>Seit 1998 bin ich als Rechtsanwalt und seit 2002 auch als Steuerberater zugelassen. Wegen meiner besonderen theoretischen Kenntnisse und praktischen Erfahrungen im Steuerrecht wurde mir 2005 der Titel <b>„Fachanwalt für Steuerrecht“</b> verliehen. 2007 nahm ich erfolgreich am Fachlehrgang <b>„Zertifizierter Testamentsvollstrecker“</b> der Arbeitsgemeinschaft Testamentsvollstreckung und Vermögenssorge e.V. (AGT) teil. Meine Bestellung zum Notar habe ich nach dem Bestehen der notariellen Fachprüfung beantragt.</p>
+
+            <p>Neben der anwaltlichen und steuerlichen Beratung meiner eigenen Mandantschaft unterstützte ich bis Ende 2005 die Mandanten von PricewaterhouseCoopers u.a. bzgl. der steueroptimierten Konzeption von Umstrukturierungen und Akquisitionen und bei der Nachfolgeplanung. In der Zeit von 2006 bis Ende 2017 beriet ich die Kunden der UBS Europe SE hinsichtlich der Besteuerung von Kapitalmarktprodukten, in Fragen der optimalen Nachfolgeplanung inkl. der Errichtung von Stiftungen und konzipierte für deren Mitarbeiter Aus- und Weiterbildungsunterlagen im Bereich Steuern und Nachfolge.</p>
+
+            <p>Einen weiteren Schwerpunkt in dieser Zeit bildete meine umfangreiche Referententätigkeit zu Fragen der steueroptimalen Übertragung von Vermögen und der Besteuerung von Kapitalmarktprodukten. <b>Neben verschiedenen Veröffentlichungen bin ich Mitautor des InvG/InvStG-Kommentars Berger/Steck/Lübbehüsen</b>. Als Vorstand der UBS Optimus Foundation Deutschland verfolge ich altruistische Themen und war u.a. maßgeblich daran beteiligt, dass in Frankfurt am Main, Düsseldorf, Berlin, Hamburg und München je ein neues Musikzentrum auf der Basis einer dreijährigen, großzügigen Förderung durch die UBS Optimus Foundation Deutschland, mit Schuljahresbeginn 2017/2018, etabliert werden konnte. Aktuell bin ich im Vorstand der NEOS Musikstiftung.</p>
         </div>
+    </div>
+
+    <div class="container">
+    {{> quote-block autor="Ruth Cohn" text="Wir haben wenig Zeit, deshalb müssen wir langsam vorgehen."}}
     </div>
 
     <div class="container">
@@ -69,8 +69,7 @@
             <div class="cnt">
                 <div class="headline  headline--akzent">     
                     <h2 class="headline__main">Meine Beratung soll Sie weiter&shy;bringen</h2>
-                </div>        
-                <p>TODO: Anstatt der Liste hätte ich hier gern etwas persönlicheres was zur headline passt</p>        
+                </div>    
                 <ul class="list"> 
                     <li class="list__item"><b>Steuerrecht und Steuergestaltung</b></li>
                     <li class="list__item"><b>Erbrecht, Schenkungen, Vorsorgen</b></li>
@@ -97,7 +96,7 @@
                             <h3>Direkte Kommunikation</h3>                            
                         </div>
                         <div class="card__body">
-                            <p>Ich bin und bleibe für Sie erreichbar und setze mich konsequent für Ihre Belange ein</p>                            
+                            <p>Ich bin und bleibe für Sie erreichbar und setze mich konsequent für Ihre Belange ein</p>
                         </div>
                     </div>
                     <div class="card  card--no-bg  text--center">
@@ -106,7 +105,7 @@
                             <h3>Ihr Partner wenn's drauf ankommt</h3>                            
                         </div>
                         <div class="card__body">
-                            <p>Die rechtliche und/oder steuerliche Beratung ist individuell auf Ihren Fall ausgerichtet</p>                            
+                            <p>Die rechtliche und/oder steuerliche Beratung ist individuell auf Ihren Fall ausgerichtet</p>
                         </div>
                     </div>
                     <div class="card  card--no-bg  text--center">
@@ -115,7 +114,7 @@
                             <h3>Versierte Rechtsberatung</h3>                            
                         </div>
                         <div class="card__body">
-                            <p>Durch Studium, Erfahrung und kontinuierliche Weiterbildung, weiß ich Sie zu Vertreten</p>                            
+                            <p>Durch Studium, Erfahrung und kontinuierliche Weiterbildung, weiß ich Sie zu Vertreten</p>  
                         </div>
                     </div>                    
                 </div>
@@ -127,10 +126,10 @@
         <div class="container  grid  grid--1-md4">
             <div class="cnt  cnt--pictext  grid__item  grid__item--md2-pos3">
                 <div class="headline  headline--akzent">
-                    <div class="headline__sub">TODO: Text fehlt</div>     
-                    <h2 class="headline__main">TODO: Text fehlt</h2>
+                    <div class="headline__sub">Kommunikation</div>     
+                    <h2 class="headline__main">Warum sitzen alle meine Mandanten hier?</h2>
                 </div>            
-                <p>TODO: Text fehlt</p>
+                <p>Weil nur eine umfassende Kommunikation auf Augenhöhe sicher zum gemeinsamen Erfolg führt.</p>
             </div>
         </div>  
     </div>
@@ -138,7 +137,7 @@
     <div class="background  background--dark">
         <div class="container container--dark  text--center">
             <div class="text-teaser  text-teaser--cta-call">
-                <p class="text--serif">Kostenlose Erstberatung. Direkt anrufen: <a class="number" href="tel:+4960319631677"><i class="fas fa-phone"></i> +49 (0) 60 31/9 63 16 77</a></p>
+                <p class="text--serif">Kostenlose Erstberatung. Direkt anrufen: <a class="number" href="tel:{{phone.plain}}"><i class="fas fa-phone"></i> {{phone.formatted}}</a></p>
             </div>
         </div>
     </div>
@@ -150,76 +149,16 @@
                 <h2 class="headline__main">Spezialisiert auf die Bereiche: <span class="visually-hidden">Erbrecht, Schenkungen, Vorsorgen, Steuerrecht und Steuergestaltung, Mietrecht und Immobilienrecht, Arbeitsrecht, Familienrecht</span></h2>                
             </div>
             <div class="cnt  cnt--boxes  cnt--area-cards  grid  grid--2-md3">
-                <div class="card  text--center">
-                    <div class="card__image"><i class="fas fa-certificate"></i></div>
-                    <div class="card__headline text--bold">Erbrecht</div>
-                    <div class="card__body">
-                        <p class="text--small">TODO: Text fehlt</p>                            
-                    </div>
-                </div>
-                <div class="card text--center">
-                    <div class="card__image"><i class="fas fa-certificate"></i></div>
-                    <div class="card__headline text--bold">Schenkungen</div>
-                    <div class="card__body">
-                        <p class="text--small">TODO: Text fehlt</p>                            
-                    </div>
-                </div>
-                <div class="card text--center">
-                    <div class="card__image"><i class="fas fa-certificate"></i></div>
-                    <div class="card__headline text--bold">Vorsorgen</div>
-                    <div class="card__body">
-                        <p class="text--small">TODO: Text fehlt</p>                            
-                    </div>
-                </div>                                
-                <div class="card text--center">
-                    <div class="card__image"><i class="fas fa-certificate"></i></div>
-                    <div class="card__headline text--bold">Steuerrecht</div>
-                    <div class="card__body">
-                        <p class="text--small">TODO: Text fehlt</p>                            
-                    </div>
-                </div>
-                <div class="card text--center">
-                    <div class="card__image"><i class="fas fa-certificate"></i></div>
-                    <div class="card__headline text--bold">Steuer&shy;gestaltung</div>
-                    <div class="card__body">
-                        <p class="text--small">TODO: Text fehlt</p>                            
-                    </div>
-                </div>                                     
-                <div class="card text--center">
-                    <div class="card__image"><i class="fas fa-certificate"></i></div>
-                    <div class="card__headline text--bold">Mietrecht</div>
-                    <div class="card__body">
-                        <p class="text--small">TODO: Text fehlt</p>                            
-                    </div>                    
-                </div>      
-                <div class="card text--center">
-                    <div class="card__image"><i class="fas fa-certificate"></i></div>
-                    <div class="card__headline text--bold">Immobilien&shy;recht</div>
-                    <div class="card__body">
-                        <p class="text--small">TODO: Text fehlt</p>                            
-                    </div>                    
-                </div>                               
-                <div class="card text--center">
-                    <div class="card__image"><i class="fas fa-certificate"></i></div>
-                    <div class="card__headline text--bold">Arbeitsrecht</div>
-                    <div class="card__body">
-                        <p class="text--small">TODO: Text fehlt</p>                            
-                    </div>                    
-                </div> 
-                <div class="card text--center">
-                    <div class="card__image"><i class="fas fa-certificate"></i></div>
-                    <div class="card__headline text--bold">Familienrecht</div>
-                    <div class="card__body">
-                        <p class="text--small">TODO: Text fehlt</p>                            
-                    </div>                    
-                </div>
-                <div class="card text--center  visually-hidden--md">
-                    <div class="card__image"><i class="fas fa-certificate"></i></div>
-                    <div class="card__headline text--bold">Vorträge</div>
-                    <div class="card__body">
-                        <p class="text--small">Gern stehe ich Ihnen für Informations&shy;veranstaltungen zur Verfügung.</p>                            
-                    </div>                    
-                </div>                                  
+                {{> card title="Erbrecht" text="Regeln Sie rechtzeitig, was aus Ihrem Vermögen werden soll — es lohnt sich stets, rechtzeitig an später zu denken!"}}
+                {{> card title="Schenkungen" text="Geben Sie mit „warmer Hand“ – aber sicher und steueroptimiert!"}}
+                {{> card title="Vorsorgen" text="Die Zukunft selbstbestimmt gestalten, wenn man dazu noch in der Lage ist — lassen Sie sich beim Zentralen Vorsorgeregister registrieren!"}}
+                {{> card title="Steuerrecht" text="Sie mögen keine überraschende Post vom Finanzamt — rechtliche und steuerliche Beratung aus einer Hand verhindert das!"}}
+                {{> card title="Steuer&shy;gestaltung" text="Mehr als ein Weg führt zum Ziel — nutzen Sie dafür die sicherste und steuereffizienteste Vorgehensweise!"}}
+                {{> card title="Mietrecht" text="Die Rendite aus Ihrem Eigentum steht nur Ihnen zu — handeln Sie schnell und konsequent, wenn hier Gefahr droht!"}}
+                {{> card title="Immobilien&shy;recht" text="Ihre Immobilie kann mehr als nur Mieteinnahmen generieren — lernen Sie auch die anderen Aspekte kennen!"}}
+                {{> card title="Arbeitsrecht" text="Auf die Balance zwischen den Interessen der Arbeitgeber und Arbeitnehmer kommt es an — vermeiden Sie Konflikte, lösen Sie bestehende umfassend und schnell!"}}
+                {{> card title="Familienrecht" text="Ein hochsensibles Thema, dass jeden treffen kann — schützen Sie sich und Ihre Familie vor existenzbedrohenden Überraschungen!"}}
+                {{> card title="Vorträge" text="Gern stehe ich Ihnen für Informations&shy;veranstaltungen zur Verfügung." class="visually-hidden--md"}}
             </div>
         </div>
     </div>

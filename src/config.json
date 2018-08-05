@@ -16,5 +16,12 @@
     }
   },
   "author": "Ulf Mücke",
-  "twitter": "@ToH_82"
+  "email": "mail@ra-stb-muecke.de",
+  "xing": "https://www.xing.com/profile/Ulf_Muecke2",
+  "linkedin": "https://www.linkedin.com/in/ulf-m%C3%BCcke-22104465",
+  "location": "https://goo.gl/maps/LURaSyZNN1m",
+  "phone": {
+    "plain": "+4960319631677",
+    "formatted": "+49 (0) 60 31/9 63 16 77"
+  }
 }

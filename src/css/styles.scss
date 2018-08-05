@@ -16,6 +16,7 @@
 @import "link";
 @import "text";
 @import "modal";
+@import "quote";
 
 * {
   box-sizing: border-box;
@@ -73,16 +74,3 @@
   }
 }
 
-.quote {
-  display: block;
-  padding-left: 1rem;
-  border-left: 2px solid #000000;
-  font-weight: 700;
-
-  .cite {
-    margin-top: 0.5rem;
-    font-size: 0.9em;
-    display: block;
-    font-weight: normal;
-  }
-}
