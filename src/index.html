@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html lang="{{site.lang}}">
-  <head itemscope itemtype="http://schema.org/WebSite">
-    {{> htmlheader}}
-    <title itemprop='name'>{{site.header.title_prefix}} - Rechtsanwalt &amp; Steuerberater, Fachanwalt für Steuerrecht in Friedberg und Umgebung</title>
-    {{> opengraph title="Rechtsanwalt &amp; Steuerberater, Fachanwalt für Steuerrecht in Friedberg und Umgebung" previewImage="ulf_muecke.jpg"}}
+  <head>
+    {{> header/html}}
+    {{> header/seo 
+        title="Rechtsanwalt &amp; Steuerberater, Fachanwalt für Steuerrecht in Friedberg und Umgebung"
+        description="Versierte Rechts­beratung mit Erfahrung, fair und transparent. Individuell ausgerichtete, rechtliche und/oder steuerliche Beratung." 
+        previewImage="ulf_muecke.jpg"}}
+
+    <title>{{site.header.title_prefix}} - Rechtsanwalt &amp; Steuerberater, Fachanwalt für Steuerrecht in Friedberg und Umgebung</title>
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "{{author}}",
+          "jobTitle": "Rechtsanwalt, Steuerberater",
+          "telephone": "{{phone.formatted}}",  
+          "url": "https://www.ra-stb-muecke.de",
+          "sameAs": [
+            "{{linkedin}}",
+            "{{xing}}"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{address.street}}",
+            "addressLocality": "{{address.place}}",
+            "postalCode": "{{address.zipcode}}",
+            "addressCountry": "{{address.country}}"
+          },
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "xpath": [
+              "/html/head/title",
+              "/html/head/meta[@name='description']/@content"
+            ]
+          }    
+        }
+    </script>    
   </head>
   <body>
 
@@ -149,11 +182,11 @@
                 <h2 class="headline__main">Spezialisiert auf die Bereiche: <span class="visually-hidden">Erbrecht, Schenkungen, Vorsorgen, Steuerrecht und Steuergestaltung, Mietrecht und Immobilienrecht, Arbeitsrecht, Familienrecht</span></h2>                
             </div>
             <div class="cnt  cnt--boxes  cnt--area-cards  grid  grid--2-md3">
-                {{> card title="Erbrecht" text="Regeln Sie rechtzeitig, was aus Ihrem Vermögen werden soll — es lohnt sich stets, rechtzeitig an später zu denken!"}}
-                {{> card title="Schenkungen" text="Geben Sie mit „warmer Hand“ – aber sicher und steueroptimiert!"}}
-                {{> card title="Vorsorgen" text="Die Zukunft selbstbestimmt gestalten, wenn man dazu noch in der Lage ist — lassen Sie sich beim Zentralen Vorsorgeregister registrieren!"}}
-                {{> card title="Steuerrecht" text="Sie mögen keine überraschende Post vom Finanzamt — rechtliche und steuerliche Beratung aus einer Hand verhindert das!"}}
-                {{> card title="Steuer&shy;gestaltung" text="Mehr als ein Weg führt zum Ziel — nutzen Sie dafür die sicherste und steuereffizienteste Vorgehensweise!"}}
+                {{> card title="Erbrecht" link="erbrecht-schenkungen-vorsorgen.html" text="Regeln Sie rechtzeitig, was aus Ihrem Vermögen werden soll — es lohnt sich stets, rechtzeitig an später zu denken!"}}
+                {{> card title="Schenkungen" link="erbrecht-schenkungen-vorsorgen.html" text="Geben Sie mit „warmer Hand“ – aber sicher und steueroptimiert!"}}
+                {{> card title="Vorsorgen" link="erbrecht-schenkungen-vorsorgen.html" text="Die Zukunft selbstbestimmt gestalten, wenn man dazu noch in der Lage ist — lassen Sie sich beim Zentralen Vorsorgeregister registrieren!"}}
+                {{> card title="Steuerrecht" link="steuerrecht-steuergestaltung.html" text="Sie mögen keine überraschende Post vom Finanzamt — rechtliche und steuerliche Beratung aus einer Hand verhindert das!"}}
+                {{> card title="Steuer&shy;gestaltung" link="steuerrecht-steuergestaltung.html" text="Mehr als ein Weg führt zum Ziel — nutzen Sie dafür die sicherste und steuereffizienteste Vorgehensweise!"}}
                 {{> card title="Mietrecht" text="Die Rendite aus Ihrem Eigentum steht nur Ihnen zu — handeln Sie schnell und konsequent, wenn hier Gefahr droht!"}}
                 {{> card title="Immobilien&shy;recht" text="Ihre Immobilie kann mehr als nur Mieteinnahmen generieren — lernen Sie auch die anderen Aspekte kennen!"}}
                 {{> card title="Arbeitsrecht" text="Auf die Balance zwischen den Interessen der Arbeitgeber und Arbeitnehmer kommt es an — vermeiden Sie Konflikte, lösen Sie bestehende umfassend und schnell!"}}

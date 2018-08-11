@@ -24,5 +24,11 @@
   "phone": {
     "plain": "+4960319631677",
     "formatted": "+49 (0) 60 31/9 63 16 77"
+  },
+  "address": {
+    "street": "Schützenrain 15",
+    "zipcode": "61169",
+    "place": "Friedberg",
+    "country": "DE"
   }
 }

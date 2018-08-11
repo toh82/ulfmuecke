@@ -63,6 +63,10 @@ h3 {
   @media (min-width: $break-medium) {
       font-size: 1.2rem;
   }
+
+  + p {
+    margin-top: 1rem;
+  }
 }
 
 h2 a,

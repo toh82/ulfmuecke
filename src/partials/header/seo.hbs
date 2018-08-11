@@ -1,0 +1,11 @@
+<meta name="keywords" content="{{keywords}}">
+<meta name="description" content="{{description}}">
+
+<meta property="og:title" content="{{site.header.title_prefix}} - {{title}}" />
+<meta property="og:url" content="{{getUrl relativePath}}" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="{{description}}" />
+
+{{#if previewImage}}
+<meta property="og:image" content="{{getUrl 'assets/media/'}}{{previewImage}}" />
+{{/if}}
