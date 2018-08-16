@@ -53,8 +53,12 @@
 }
 
 .contact {
-  padding-top: 6px;
-  padding-bottom: 1.5rem;
+  margin-top: 0; 
+  padding-bottom: 0.5rem;
+
+  + .list {
+    margin-top: 1rem;
+  }
 
   .phone,
   .mail {

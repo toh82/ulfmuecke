@@ -23,12 +23,15 @@
   "location": "https://goo.gl/maps/LURaSyZNN1m",
   "phone": {
     "plain": "+4960319631677",
-    "formatted": "+49 (0) 60 31/9 63 16 77"
+    "formatted": "+49 (0) 60 31/9 63 16 77"    
   },
+  "fax": "+49 (0) 60 31/9 63 16 78",
   "address": {
+    "company": "RA & StB Ulf Mücke",
     "street": "Schützenrain 15",
     "zipcode": "61169",
     "place": "Friedberg",
+    "loc-country": "Hessen",
     "country": "DE"
   }
 }

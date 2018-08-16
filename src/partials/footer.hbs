@@ -5,8 +5,8 @@
       <div class="cnt">
         <h2 class="cnt__header">Anschrift:</h2>
         <div class="cnt__content"><p>
-          <strong>RA &amp; SB Ulf Mücke</strong><br>
-          {{address.street}}<br>{{address.zip}} {{address.place}}<br>
+          <strong>{{address.company}}</strong><br>
+          {{address.street}}<br>{{address.zipcode}} {{address.place}} ({{address.loc-country}})<br>
           <a class="location-link" href="{{location}}" rel="noopener" target="_blank"><i class="fas fa-map-marked-alt"></i><span class="visually-hidden">In Google Maps öffnen</span></a></p>
         </div>   
       </div>
@@ -14,8 +14,9 @@
       <div class="cnt">
         <h2 class="cnt__header">Kontakt:</h2>
         <div class="cnt__content">
-          <p class="contact"><a class="phone" href="tel:{{phone.plain}}">{{phone.formatted}}</a>
-          <a class="mail" href="mailto:mail@ra-stb-muecke.de">{{email}}</a></p>
+          <p class="contact"><a class="phone" href="tel:{{phone.plain}}" title="Telefon"><i class="fas fa-phone"></i> {{phone.formatted}}</a></p>
+          <p class="contact"><i class="fas fa-fax"></i> {{fax}}</p>
+          <p class="contact"><a class="mail" href="mailto:mail@ra-stb-muecke.de" title="E-Mail"><i class="fas fa-envelope"></i> {{email}}</a></p>
 
           <ul class="list  list--unstyled  list--inline">
             <li class="list__item"><a href="{{xing}}" class="social-link"><i class="fab fa-xing"></i><span class="visually-hidden">Xing Profil</span></a></li>
