@@ -1,22 +1,13 @@
-@import "normalize-css/normalize.css";
 
 @import "variables";
-
 @import "navigation";
 @import "topbar";
 @import "header";
-@import "footer";
 @import "base";
 @import "list";
-@import "card";
-@import "tags";
-@import "button";
-@import "figure";
 @import "layout";
 @import "link";
 @import "text";
-@import "modal";
-@import "quote";
 
 * {
   box-sizing: border-box;

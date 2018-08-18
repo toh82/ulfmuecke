@@ -32,7 +32,7 @@ gulp.task('images', function () {
 
   gulp.src('src/media/**/*')
     .pipe(imagemin([
-      imageminMozjpeg({quality: 90})
+      imageminMozjpeg({quality: 80})
     ]))
     .pipe(gulp.dest('web/assets/media'))
 })
@@ -62,7 +62,9 @@ gulp.task('css', function () {
   var sass = require('gulp-sass')
 
   var cssSrc = [
-    './src/css/styles.scss'
+    './src/css/styles.scss',
+    './src/css/specific.scss',
+    './node_modules/normalize-css/normalize.css'
   ]
 
   return gulp.src(cssSrc)
