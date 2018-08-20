@@ -49,7 +49,7 @@ gulp.task('js', function () {
 
 gulp.task('copy', function () {
   var gulpCopy = require('gulp-copy')
-  var sourceFiles = ['node_modules/micromodal/dist/micromodal.min.js']
+  var sourceFiles = ['']
   var destination = 'web/assets/lib'
 
   return gulp.src(sourceFiles)
@@ -76,8 +76,8 @@ gulp.task('css', function () {
     .pipe(gulp.dest('web/assets/css'))
 })
 
-gulp.task('default', ['hbs', 'css', 'js'])
-gulp.task('build', ['hbs', 'css', 'js', 'images', 'copy'])
+gulp.task('default', ['hbs', 'css'])
+gulp.task('build', ['hbs', 'css', 'images'])
 gulp.task('watch', function () {
-  return gulp.watch('./src/**/*', ['hbs', 'css', 'js'])
+  return gulp.watch('./src/**/*', ['hbs', 'css'])
 })
