@@ -3,6 +3,7 @@
     <head>
         {{> header/html}}
         <title>{{site.header.title_prefix}} - Impressum</title>
+        {{> analytics}}
     </head>
     <body>
         <div class="background  background--small  background--city">
@@ -22,13 +23,15 @@
 
             <p><strong>Ulf Mücke</strong><br>
             Rechtsanwalt und Steuerberater<br>
-            Schützenrain 15<br>
-            61169 Friedberg</p>
+            {{address.street}}<br>
+            {{address.zipcode}} {{address.place}}</p>
 
             <p><strong>Kontakt:</strong><br>
-            Telefon: 0 60 31- 9 63 16 77<br>
-            Fax: 0 60 31- 9 63 16 78<br>
-            E-Mail: mail@ra-stb-muecke.de</p>
+            Telefon: {{phone.formatted}}<br>
+            Fax: {{fax}}<br>
+            E-Mail: {{email}}</p>
+
+            <p><strong>USt.IdNr.:</strong> DE238323788</p>
 
             <h2>1. Angaben nach Telemediengesetz</h2>
             <p><strong>Zulassung:</strong>

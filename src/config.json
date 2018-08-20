@@ -8,6 +8,10 @@
     "header": {
       "title_prefix": "Ulf Mücke",
       "keywords": ""
+    },
+    "google_analytics": {
+      "id": 123,
+      "active": false
     }
   },
   "blog": {
