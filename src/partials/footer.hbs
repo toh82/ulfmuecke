@@ -7,7 +7,7 @@
         <div class="cnt__content"><p>
           <strong>{{address.company}}</strong><br>
           {{address.street}}<br>{{address.zipcode}} {{address.place}} ({{address.loc-country}})<br>
-          <a class="location-link" href="{{location}}" rel="noopener" target="_blank"><i class="fas fa-map-marked-alt"></i><span class="visually-hidden">In Google Maps öffnen</span></a></p>
+          <a class="location-link" href="{{location}}" rel="noopener" target="_blank" title="Google Maps Standort von Büro Ulf Mücke"><i class="fas fa-map-marked-alt"></i><span class="visually-hidden">In Google Maps öffnen</span></a></p>
         </div>   
       </div>
 
@@ -19,8 +19,8 @@
           <p class="contact"><a class="mail" href="mailto:mail@ra-stb-muecke.de" title="E-Mail"><i class="fas fa-envelope"></i> {{email}}</a></p>
 
           <ul class="list  list--unstyled  list--inline">
-            <li class="list__item"><a href="{{xing}}" class="social-link"><i class="fab fa-xing"></i><span class="visually-hidden">Xing Profil</span></a></li>
-            <li class="list__item"><a href="{{linkedin}}" class="social-link"><i class="fab fa-linkedin-in"></i><span class="visually-hidden">LinkedIn Profil</span></a></li>
+            <li class="list__item"><a href="{{xing}}" title="Profil von Ulf Mücke auf Xing" class="social-link" target="_blank" rel="noopener"><i class="fab fa-xing"></i><span class="visually-hidden">Xing Profil</span></a></li>
+            <li class="list__item"><a href="{{linkedin}}" title="Profil von Ulf Mücke auf LinkedIn" class="social-link" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i><span class="visually-hidden">LinkedIn Profil</span></a></li>
           </ul>
         </div>
       </div>
@@ -41,6 +41,3 @@
     </div>
   </div>
 </footer>
-
-<script src="{{site.url.static}}assets/lib/zepto.min.js"></script>
-<script src="{{site.url.static}}assets/js/script.js"></script>

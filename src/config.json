@@ -10,8 +10,8 @@
       "keywords": ""
     },
     "google_analytics": {
-      "id": 123,
-      "active": false
+      "id": "UA-124540454-1",
+      "active": true
     }
   },
   "blog": {
