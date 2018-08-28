@@ -40,16 +40,25 @@
                 "@type": "ContactPoint",
                 "telephone": "{{phone.formatted}}",
                 "contactType": "customer service"
-            }],
-            "speakable": {
-                "@type": "SpeakableSpecification",
-                "xpath": [
-                  "/html/head/title",
-                  "/html/head/meta[@name='description']/@content"
-                ]
-            }                
+            }]               
         }
     </script>  
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "WebPage",
+            "name": "Rechtsanwalt und Steuerberater, Fachanwalt für Steuerrecht in Friedberg und Umgebung",
+            "url": "http://www.ra-stb-muecke.de",
+            "speakable":{
+                "@type": "SpeakableSpecification",
+                "xpath": [
+                    "/html/head/title",
+                    "/html/head/meta[@name='description']/@content"
+                ]
+            }
+        }
+    </script>
 
     {{> analytics}}
   </head>
