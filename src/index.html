@@ -16,7 +16,7 @@
           "name": "{{author}}",
           "jobTitle": "Rechtsanwalt, Steuerberater",
           "telephone": "{{phone.formatted}}",  
-          "url": "https://www.ra-stb-muecke.de",
+          "url": "http://www.ra-stb-muecke.de",
           "sameAs": [
             "{{linkedin}}",
             "{{xing}}"
@@ -27,17 +27,30 @@
             "addressLocality": "{{address.place}}",
             "postalCode": "{{address.zipcode}}",
             "addressCountry": "{{address.country}}"
-          },
-          "speakable": {
-            "@type": "SpeakableSpecification",
-            "xpath": [
-              "/html/head/title",
-              "/html/head/meta[@name='description']/@content"
-            ]
-          }    
+          }
         }
     </script>  
-    
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "http://www.ra-stb-muecke.de",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "{{phone.formatted}}",
+                "contactType": "customer service"
+            }],
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "xpath": [
+                  "/html/head/title",
+                  "/html/head/meta[@name='description']/@content"
+                ]
+            }                
+        }
+    </script>  
+
     {{> analytics}}
   </head>
   <body>
